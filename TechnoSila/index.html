@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../TechnoSila/css/style.css">
+    <link rel="stylesheet" href="../TechnoSila/css/Fonts/stylesheet.css">
+    <link rel="stylesheet" href="../TechnoSila/css/normalize.css">    
+    <link rel="stylesheet" href="../TechnoSila/images/font-awesome-4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../TechnoSila/css/jquery.fancybox.min.css">
+    <title>Techno Sila</title>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="search__box">
+                    <input type="text" class="search__txt" placeholder="Поиск">
+                    <a href="#">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <nav class="nav">
+                    <a class="num" href="tel:80225750096">8 (0225) 75 00 96</a>
+                    <a class="nav__link"href="#">Каталог</a>
+                    <a data-fancybox data-src="#modal" href="javascript:;" class="nav__link">Войти</a>
+                    <a class="nav__link"href="#">Корзина</a>
+                </nav>
+
+            </div>
+        </div>
+        
+    </header>
+
+    <div id="modal">
+        <h1>авторизация</h1>
+        <input type="text" placeholder="логин">
+        <input type="password" placeholder="пароль">
+        <button type="submit" name="enter">войти</button>
+        <p>Нет аккаунта?</p>
+        <a data-fancybox data-src="#modal2" href="javascript:;">Зарегистрироваться</a>
+    </div>
+    <div id="modal2">
+        <h1>регистрация</h1>
+        <div class="input__class">
+            <input type="text" placeholder="имя">
+            <input type="textd" placeholder="фамилия">
+            <input type="text" placeholder="e-mail">
+            <input type="password" placeholder="пароль">
+            <input type="password" placeholder="повторите пароль">
+        </div>
+        <label classs="form-check-label">
+            <input type="checkbox" class="form-check-input">
+            я согласен на обработку персональных данныx
+        </label>
+        <button type="submit" name="enter">регистрация</button>
+    </div>
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../TechnoSila/js/jquery.fancybox.min.js"></script> 
+    <script src="../TechnoSila/js/main.js"></script>
+</body>
+</html>
