@@ -28,11 +28,12 @@
                     </a>
                 </div>
 
-                <nav class="nav">
+                <nav class="nav" id="myTopnav">
                     <a class="num" href="tel:80225750096">8 (0225) 75 00 96</a>
                     <a class="nav__link"href="#">Каталог</a>
                     <a data-fancybox data-src="#modal" href="javascript:;" class="nav__link">Войти</a>
                     <a class="nav__link"href="#">Корзина</a>
+                    <a class="nav__icon" id ="menu" href="#"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></a>
                 </nav>
             </div>
         </div>        
@@ -75,18 +76,29 @@
         <div class="list">
             <div class="item">
                 <p><span style="font-weight:bold">Любите готовить</span>  -  современная кухонная техника станет Вам надежным помощником</p>
-                <img src="../TechnoSila/images/mdi_done.png" alt="">
+                <img src="../TechnoSila/images/Mask Group1.png" alt="">
             </div>
             <div class="item">
-                <p></p>
-                <img src="../TechnoSila/images/mdi_theaters.png" alt="">
+                <p><span style="font-weight:bold">любите смотреть кино</span> - электроника, купленная в магазине, обеспечит Вам хороший звук и картинку</p>
+                <img src="../TechnoSila/images/Mask Group2.png" alt="">
             </div>
             <div class="item">
-                <p></p>
-                <img src="../TechnoSila/images/mdi_build.png" alt="">
+                <p>приобретенный у нас <span style="font-weight:bold">инструмент</span> поможет, при необходимости, легко и быстро смонтировать покупку</p>
+                <img src="../TechnoSila/images/Mask Group3.png" alt="">
             </div>
 
         </div>
+    </div>
+    <div id ="map">
+
+    </div>
+    <div class="footer">
+        <nav class="nav_footer">
+            <a href="#">каталог</a>
+            <a href="#">о нас</a>
+            <a href="#">контакты</a>
+        </nav>
+        <p>Широкий выбор бытовой техники, высокое качество обслуживания, четкие сроки и условия доставки, гарантия на всю бытовую технику, а так же возможность приобрести все необходимое в одном месте, поможет Вам стать постоянным покупателем магазина «Техносила».</p>
     </div>
 
 
@@ -109,22 +121,48 @@
     <div id="modal2">
         <h1>регистрация</h1>
         <div class="input__class">
-            <input type="text" placeholder="имя">
-            <input type="textd" placeholder="фамилия">
-            <input type="text" placeholder="e-mail">
-            <input type="password" placeholder="пароль">
+            <div class="input2__style">
+                <input type="text" placeholder="имя">
+            </div>
+            <div class="input2__style">
+                <input type="text" placeholder="фамилия">
+            </div>
+            <div class="input2__style">
+                <input type="text" placeholder="e-mail">
+            </div>
+            <div class="input2__style">
+                <input type="password" placeholder="пароль">
+            </div>
+            <div class="input2__style">
             <input type="password" placeholder="повторите пароль">
+            </div>
         </div>
-        <label classs="form-check-label">
+        <label class="form-check-label">
             <input type="checkbox" class="form-check-input">
             я согласен на обработку персональных данныx
         </label>
-        <button type="submit" name="enter">регистрация</button>
+        <div class="input2__style">
+            <input type="submit" value="регистрация">
+        </div>   
     </div>
 
     
     
-
+    <script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: 53.1350389, lng: 29.2258773};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 16.53, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXHH7fsdXRxpHI7XCQsJlP7NsX1y48fwQ&callback=initMap">
+    </script> 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../TechnoSila/js/jquery.fancybox.min.js"></script> 
